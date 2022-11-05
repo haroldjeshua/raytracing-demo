@@ -7,6 +7,17 @@
   overflow: hidden;
 }
 
+.rect-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 2rem;
+}
+
 .rect {
   position: absolute;
   width: 256px;
@@ -37,4 +48,8 @@
   bottom: 32px;
   right: 32px;
   z-index: 4;
+}
+
+.rect-container .rect {
+  position: relative;
 }
