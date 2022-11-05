@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Raytracing Demo</title>
   </head>
   <body>
     <div id="app">
+      <div>
+        <h1>Raytracing Demo</h1>
+      </div>
       <div class="rect-container">
-        <div class="rect rectH" data-hue="252"></div>
-        <div class="rect rectJ" data-hue="262"></div>
-        <div class="rect rectV" data-hue="282"></div>
+        <div class="rect rectH" data-hue="252">
+          <span>Organic markup</span>
+        </div>
+        <div class="outer">
+          <div class="rect rectJ" data-hue="262"></div>
+
+          <span>clip-path: path()</span>
+        </div>
+        <div class="outer">
+          <div class="rect rectV" data-hue="282"></div>
+          <span>clip-path: polygon()</span>
+        </div>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
