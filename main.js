@@ -1,7 +1,6 @@
 import "./style.css";
 
 const app = document.querySelector("#app");
-// const rectangles = document.querySelectorAll(".rect");
 const rectangles = Array.from(document.querySelectorAll(".rect"));
 
 console.log(rectangles);

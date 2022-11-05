@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Space+Grotesk:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Space+Grotesk:wght@300;400;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -22,9 +22,24 @@ body {
   overflow: hidden;
 }
 
+header {
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 h1 {
   font-size: 4rem;
   font-weight: 600;
+}
+a {
+  all: unset;
+  cursor: pointer;
 }
 .rect-container {
   display: flex;
@@ -94,9 +109,16 @@ h1 {
   clip-path: path(
     "M2.57771 23.1554C-2.7415 12.517 4.99443 0 16.8885 0H221.111C233.006 0 240.741 12.517 235.422 23.1554L133.311 227.378C127.414 239.171 110.586 239.171 104.689 227.378L2.57771 23.1554Z"
   );
+  /* clip-path: polygon(51% 100%, 0 0, 100% 0); */
 }
 
-span {
+.label {
   position: absolute;
-  bottom: -32px;
+  bottom: -44px;
+}
+
+.status {
+  position: absolute;
+  bottom: -84px;
+  font-size: 0.75rem;
 }

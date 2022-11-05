@@ -8,24 +8,28 @@
   </head>
   <body>
     <div id="app">
-      <div>
+      <header>
         <h1>Raytracing Demo</h1>
-      </div>
+      </header>
+
       <div class="rect-container">
         <div class="rect rectH" data-hue="252">
-          <span>Organic markup</span>
+          <span class="label">Organic markup</span>
+          <span class="status">Ray + shadow tracing working</span>
         </div>
         <div class="outer">
           <div class="rect rectJ" data-hue="262"></div>
-
-          <span>clip-path: path()</span>
+          <span class="label">clip-path: path()</span>
+          <span class="status">Work in progress: shadow tracing</span>
         </div>
         <div class="outer">
           <div class="rect rectV" data-hue="282"></div>
-          <span>clip-path: polygon()</span>
+          <span class="label">clip-path: polygon()</span>
+          <span class="status">Work in progress: shadow tracing</span>
         </div>
       </div>
     </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
