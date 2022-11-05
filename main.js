@@ -11,7 +11,7 @@ let mouseY = 0;
 
 function updateRectangle(rectangle) {
   const position = rectangle.getBoundingClientRect();
-  const hue = parseInt(rect.getAttribute("data-hue"));
+  const hue = parseInt(rectangle.getAttribute("data-hue"));
 
   function addGradient() {
     const colInner = `hsl(${hue}, 100%, 80%)`;
@@ -42,9 +42,20 @@ function updateRectangle(rectangle) {
     const col = `hsla(${hue}, 100%, 15%, 0.6)`;
     const col1 = `hsla(${hue}, 100%, 60%, 0.2)`;
 
-    rect.style.boxShadow = `${val.x}px ${val.y}px ${val.blur}px ${col}, 0px 0px 40px ${col1}`;
+    rectangle.style.boxShadow = `${val.x}px ${val.y}px ${val.blur}px ${col}, 0px 0px 40px ${col1}`;
   }
 
   addGradient();
   addShadow();
 }
+
+window.addEventListener("mousemove", (ev) => {
+  mouseX = ev.clientX;
+  mouseY = ev.clientY;
+
+  rectangles.forEach((rectangle) => {
+    updateRectangle(rectangle);
+  });
+
+  app.style.backgroundImage = `radial-gradient(ellipse at ${mouseX}px ${mouseY}px, #fff, #bbb)`;
+});

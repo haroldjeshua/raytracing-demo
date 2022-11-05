@@ -13,25 +13,28 @@
   height: 256px;
   border-radius: 32px;
   background-clip: border-box;
-  border: 1px solid red;
 }
 
 .rect1 {
   top: 32px;
   left: 32px;
+  z-index: 1;
 }
 
 .rect2 {
   top: 32px;
   right: 32px;
+  z-index: 2;
 }
 
 .rect3 {
   bottom: 32px;
   left: 32px;
+  z-index: 3;
 }
 
 .rect4 {
   bottom: 32px;
   right: 32px;
+  z-index: 4;
 }
